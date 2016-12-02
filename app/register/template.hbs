@@ -1,0 +1,12 @@
+{{#simple-form onsubmit=(action "saveUser") as |formUser|}}
+  <p>
+    {{input value=formUser.email placeholder="email"}}
+  </p>
+  <p>
+    {{input value=formUser.password placeholder="password" type="password"}}
+  </p>
+
+  <p>
+    <button>Submit</button>
+  </p>
+{{/simple-form}}
